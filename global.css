@@ -53,10 +53,14 @@ input[type="range"] {
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-	padding: 0.6rem 1rem
+	background-color: #4568b6;
+	padding: 0.6rem 1rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+	border-radius: 6px;
+	color: #fff;
+	border: 1px solid transparent;
+	transition: 0.3s background-color;
 }
 
 button:disabled {
@@ -69,4 +73,22 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+button:hover {
+	background-color: #81a4f2;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #222;
+		color: #fff;
+	}
+	h1 {
+		color: #fafafa;
+	}
+	input[type=text], select {
+		background-color: #181818;
+		color: #fff;
+	}
 }
